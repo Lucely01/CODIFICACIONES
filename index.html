@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
 <body>
 
-    <header>
-        <h1>Lucely Cituk Developer</h1>
+    <header >
+        <h1 class="titulo">Lucely Cituk <span>Developer</span></h1>
     </header>
 
     <nav>
@@ -78,7 +80,38 @@
 
     <section>
         <h2>Contacto</h2>
+        <form>
+            <fieldset>
+                <legend>Llena tus datos de contacto</legend>
+                <div>
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Tu nombre">
+                </div>
+
+                <div>
+                    <label>Teléfono</label>
+                    <input type="tel" placeholder="Tu teléfono">
+                </div>
+
+                <div>
+                    <label>Correo</label>
+                    <input type="email" placeholder="Tu email">
+                </div>
+
+                <div>
+                    <label>Mensaje</label>
+                    <br>
+                    <textarea></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </fieldset>
+        </form>
     </section>
+
     <footer>
         <p>Todos los derechos reservados</p>
     </footer>
