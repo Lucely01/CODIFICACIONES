@@ -1,8 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Siempre va primero normalize-->
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Importación de Google fonts-->
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub&display=swap" rel="stylesheet">
+
+    <!-- Enlace al CSS personalizado-->
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
@@ -12,14 +25,14 @@
     <header >
         <h1 class="titulo">Lucely Cituk <span>Developer</span></h1>
     </header>
-
-    <nav>
+<div class="nav-bg">
+    <nav class=" navegador-principal">
         <a href="#">Inicio</a>
         <a href="#">Sobre Mí</a>
         <a href="#">Clientes</a>
         <a href="#">Contacto</a>
     </nav>
-
+</div>
     <section>
         <h2>Diseño y desarrollo web</h2>
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffc107" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -106,6 +119,7 @@
 
                 <div>
                     <input type="submit" value="Enviar">
+                    <i class="bi bi-airplane-engines-fill"></i>
                 </div>
 
             </fieldset>
@@ -115,6 +129,6 @@
     <footer>
         <p>Todos los derechos reservados</p>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
